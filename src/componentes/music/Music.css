@@ -1,0 +1,40 @@
+.musica {
+    text-align: center;
+    margin: 3rem;
+
+  }
+  
+  /* Botón con tu mismo estilo romántico beige-dorado */
+  .musica__btn {
+    background: linear-gradient(180deg, #fff, #fbf8f3);
+    border: 1px solid #b8a47a;
+    border-radius: 999px;
+    color: #2b2a28;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.2rem;
+    padding: 0.7rem 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(184, 164, 122, 0.25);
+  }
+  
+  /* Efecto hover igual a tus otros botones */
+  .musica__btn:hover {
+    background: #b8a47a;
+    color: #fff;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(184, 164, 122, 0.6);
+  }
+  
+  /* Estado cuando está sonando */
+  .musica__btn.is-playing {
+    background: #b8a47a;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(184, 164, 122, 0.6);
+  }
+  
+  /* Eliminar borde azul al enfocar o hacer clic */
+  .musica__btn:focus {
+    outline: none;
+  }
+  

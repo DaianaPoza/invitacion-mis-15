@@ -1,0 +1,14 @@
+.chicos{
+margin: 5rem;
+color: black;
+
+white-space: nowrap;
+word-wrap: break-word;
+overflow-wrap: break-word;
+white-space: normal;
+word-break: normal;     /* no cortar dentro de una palabra */
+  overflow-wrap: normal;  /* no forzar quiebres raros */
+  white-space: normal;    /* permitir saltos solo en espacios */
+  hyphens: none;          /* sin guiones automáticos */
+  text-align: center
+}

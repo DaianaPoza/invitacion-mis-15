@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+
+
+body {
+  font-family: "Dancing Script", cursive;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;          /* uno debajo del otro */
+}
+
+
+/* El contenido central crece y empuja el footer abajo */
+.main { flex: 1 1 auto; }
+
+/* Medios fluidos: que imágenes/iframes nunca se desborden */
+img, iframe, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+  /* Lectura más prolija en títulos y párrafos */
+  h1, h2, h3, h4, p {
+    line-height: 1.5;
+    word-break: keep-all;    /* evita cortes feos */
+    hyphens: auto;           /* si el navegador lo soporta, divide bien */
+    text-wrap: pretty;       /* mejora saltos (browsers modernos) */
+font-family: "Dancing Script", cursive; 
+  }
+
+  /* Bloques de “datos” (fecha, hora, venue) centrados y con líneas limpias */
+  .datos { text-align: center; padding: 0 8px; }
+  .datos .linea { 
+    margin: .35rem 0; 
+    white-space: nowrap;     /* cada línea se mantiene en una sola línea */
+  }
+
+
+  /* Hero/footer con imagen: bajamos altura para móviles */
+  .footer-card { height: 60vh; }
+  .footer-title { font-size: clamp(1.6rem, 5vw, 2.2rem); }
+  .footer-sub   { font-size: clamp(1rem, 3.5vw, 1.2rem); }
+
+@media(min-width:768px){
+ }
+  :root {
+    font-size: 16px; /* base estable */
+  }
+ 
+  h1 {
+    
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin: 0.5rem 0;
+    color: #7c6127;
+  }
+  
+  h2 {
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0.5rem 0;
+    color: #7c6127;
+    
+  }
+  
+  h3 {
+    
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+    color: #7c6127;
+    
+  }
+  
+  p {
+    
+    line-height: 1.7;
+    
+  }
+
+  html, body, #root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* evita scroll horizontal si alguna sección se “desborda” */
+  }
+  
+  

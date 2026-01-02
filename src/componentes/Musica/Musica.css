@@ -1,0 +1,99 @@
+
+
+.spotify {
+  background: linear-gradient(180deg, #fbf8f3, #fff 40%, #fbf8f3);
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .spotify__title {
+    color: #b8a47a;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .spotify__icon {
+    color: #b8a47a;
+    font-size: 2rem;
+    animation: pulse 2.5s infinite ease-in-out;
+  }
+  @keyframes pulse {
+    0%,100% { transform: scale(1); opacity: 1; }
+    50%     { transform: scale(1.15); opacity: 0.85; }
+  }
+
+  
+  .spotify__text {
+    color:black;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-size: 2rem;
+    word-break: normal;
+    hyphens: none;
+  }
+  
+/* Contenedor responsivo del iframe con relación 16:9 */
+.spotify__embed {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto 1.4rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0,0,0,.06);
+    border: 1px solid #eadfce;
+    aspect-ratio: 16 / 9;
+  }
+  .spotify__embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  
+/* Botones */
+.spotify__actions {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .spotify__button {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background: linear-gradient(180deg, #fff, #fbf8f3);
+    border: 1px solid #b8a47a;
+    border-radius: 999px;
+    color: #2b2a28;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: "Dancing Script", cursive;
+
+  }
+  
+  .spotify__button:hover {
+    background: #b8a47a;
+    color: #fff;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(184, 164, 122, 0.6);
+  }
+
+  .spotify__button.alt {
+    border-color: #b8a47a;
+    background: linear-gradient(180deg, #fff, #fff);
+  }
+
+  /* Responsive */
+@media (max-width: 768px) {
+    .spotify { padding: 2rem 1rem; }
+    .spotify__title { flex-direction: column; gap: 0.3rem; }
+    .spotify__icon { font-size: 2.2rem; }
+    .spotify__text { font-size: 2rem; padding: 0 0.5rem; }
+    .spotify__button { font-size: 1,5rem; padding: 0.7rem 1.3rem; }
+  }
+  

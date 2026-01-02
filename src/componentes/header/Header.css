@@ -1,0 +1,130 @@
+.invitacion-fondo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh; /* ocupa casi toda la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Capa beige translúcida sobre la foto para mejorar legibilidad */
+.invitacion-fondo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(240, 236, 231, 0.35); /* beige suave con transparencia */
+  
+}
+
+.invitacion-texto {
+  position:relative; /* para quedar sobre el overlay */
+  z-index: 1;
+  transform:translateY(-150px);
+  
+}
+
+.invitacion-texto h1 {
+ /* font-size: 5rem; */
+ font-size: clamp(3.5rem, 9vw, 5rem);  /* fluido */
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #fbfaf9;
+ 
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 10px rgba(6, 7, 7, 0.6),
+    0 0 20px rgba(102, 201, 216, 0.4),
+    0 0 30px rgba(78, 213, 237, 0.3);
+}
+
+.invitacion-texto h2 {
+ /* font-size: 4rem; */
+ font-size: clamp(3rem, 6vw, 4rem);
+  color: #fbfaf9; 
+
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 10px rgba(6, 7, 7, 0.6),
+    0 0 20px rgba(102, 201, 216, 0.4),
+    0 0 30px rgba(78, 213, 237, 0.3);
+
+}
+/* 💫 Versión móvil */
+@media (max-width: 768px) {
+  .invitacion-fondo {
+    height: 70vh;
+  }
+  
+}
+
+.invitacion-fondo {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.invitacion-fondo-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Tu capa beige translúcida */
+.invitacion-fondo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(240, 236, 231, 0.35);
+  
+}
+
+/* Texto encima */
+.invitacion-texto {
+  position: relative;
+  z-index: 1;
+  transform: translateY(-150px);
+  
+}
+
+
+
+
+
+
+
+
+/* 📱 Solo en móvil: fade-in suave una sola vez */
+@media (max-width: 768px) {
+  .invitacion-texto h1 {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: h2FadeIn 1000ms ease-out forwards;
+  }
+
+  .invitacion-texto h2 {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: h2FadeIn 1000ms ease-out forwards;
+  }
+}
+
+@keyframes h2FadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+

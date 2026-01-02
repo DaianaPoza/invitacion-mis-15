@@ -1,0 +1,34 @@
+
+  .fecha {
+    max-width: 700px;
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: bold; 
+    margin: 0.5rem auto; /* <-- centrado horizontal */
+  text-align: center;  /* <-- centra el texto dentro */
+  
+      
+  }
+  
+.datos .linea {
+  white-space: nowrap;
+  font-size: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .datos { 
+    padding-inline: 12px;           /* aire a los lados */
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  .datos .linea {
+    white-space: normal;            /* ✅ permitir salto */
+    text-wrap: pretty;              /* saltos más lindos */
+    overflow-wrap: anywhere;        /* por si alguna palabra queda larguísima */
+  }
+
+}
+

@@ -1,0 +1,87 @@
+.map {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: white;
+}
+
+/* contenedor central con ancho máximo */
+.map .container { 
+  max-width: 1080px; 
+  margin: 0 auto; 
+}
+
+/* títulos y texto */
+.map__title {
+  margin: 0 0 0.5rem;
+  color: #b8a47a;
+  font-size: 2rem;
+}
+
+.map__address {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* botón de enlace */
+.map__link {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: white;
+  border: 1px solid #b8a47a;
+  border-radius: 999px;
+  color: #2b2a28;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: "Dancing Script", cursive;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(184, 164, 122, 0.25);
+  margin-top: 1.2rem;
+}
+
+.map__link:hover {
+  background: #b8a47a;
+  color: #fff !important;
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(184, 164, 122, 0.6);
+  border: none;
+  text-decoration: none;
+}
+
+/* quita color azul y borde al hacer clic o focus */
+.map__link:visited,
+.map__link:focus,
+.map__link:active {
+  color: #2b2a28;
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+/* iframe del mapa (oculto por defecto) */
+.map__frame {
+  display: none;
+}
+
+/* 🚫 evitar texto cortado en móviles */
+.container .liner {
+  white-space: normal;      /* antes: nowrap */
+  overflow-wrap: anywhere;  /* permite partir palabras largas */
+  text-wrap: pretty;
+}
+
+/* 💫 Ajuste responsive para pantallas chicas */
+@media (max-width: 768px) {
+  .map__title,
+  .map__address {
+    font-size: clamp(2rem, 5vw, 1.8rem);
+    padding-inline: 12px;   /* agrega aire lateral */
+  }
+
+  .map__link {
+    font-size: 1rem;
+    padding: 0.7rem 1.4rem;
+  }
+}
+
+  

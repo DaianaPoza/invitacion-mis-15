@@ -1,0 +1,133 @@
+/* Paleta romántica minimal */
+.rsvp {
+    --paper: #fffdf9;
+    --beige: #f4ece4;
+    --ink:   #2d2a26;
+    --gold:  #b08d57;
+    --line:  rgba(0,0,0,.08);
+  
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, var(--paper), var(--beige));
+  }
+  
+  .rsvp-card {
+    width: min(560px, 92vw);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 28px rgba(0,0,0,.06);
+  }
+  
+  /* Título caligráfico */
+  .heading {
+   
+    font-size: 2rem;
+    color: #b8a47a; 
+    text-align: center;
+    margin: 0 0 .4rem;
+  }
+  .heading::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 1px;
+    margin: .5rem auto 1rem;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: .85;
+  }
+  
+  /* Radios en columna + color de acento dorado */
+  .radios {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .radios .form-check-input[type="radio"] { accent-color: var(--gold); }
+  
+  /* Etiqueta del select */
+  .field-label {
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  
+  /* Inputs con foco suave dorado */
+  .rsvp .form-control,
+  .rsvp .form-select {
+    border-radius: 12px;
+    border-color: var(--line);
+  }
+  .rsvp .form-control:focus,
+  .rsvp .form-select:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 .2rem rgba(176,141,87,.15);
+  }
+  
+  
+/* Botón CONFIRMAR con el look del botón "Ver datos bancarios" */
+.rsvp .btn-confirm {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(180deg, #fff, #fbf8f3);
+  border: 1px solid #b8a47a;
+  border-radius: 999px;
+  color: #2b2a28;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: "Dancing Script", cursive;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(184,164,122,0.25);
+  letter-spacing: .5px;
+  text-transform: none;        /* quita mayúsculas si querés */
+  /* anula estilos de bootstrap */
+  background-image: none;
+}
+
+
+  .btn-confirm:hover,
+  .btn-confirm:focus {
+    background: #b8a47a;
+    color: #fff;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(184,164,122,0.6);
+    border-color: #b8a47a;
+  }
+
+  /* Estado activo y deshabilitado (enviando) */
+  .rsvp .btn-confirm:active {
+    transform: scale(0.98);
+  }
+
+  .rsvp .btn-confirm:disabled,
+  .rsvp .btn-confirm[disabled] {
+    opacity: .7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+/* Quitar borde azul del foco y dejar foco dorado suave (accesible) */
+.rsvp .btn-confirm:focus,
+.rsvp .btn-confirm:focus-visible {
+  outline: none;
+  box-shadow: 0 0 8px rgba(184,164,122,0.5);
+}
+
+@media (min-width: 992px) {
+  .rsvp .btn-confirm {
+    font-size: 1.35rem;
+    padding: 1rem 2.4rem;
+  }
+}
+
+
+
+  /* Mensaje éxito */
+  .success-title, .success-text { text-align: center; margin: 0 0 4px; color: var(--ink); }
+  
+
