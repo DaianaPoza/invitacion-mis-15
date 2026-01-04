@@ -1,41 +1,35 @@
-import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import aylin1 from "../../assets/aylin1.jpeg"; 
+import aylin2 from "../../assets/aylin2.jpeg"; 
+import './Carrusel.css';
 
-
-function ControlledCarousel() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
-
+function Carrusel() {
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-
+    <Carousel fade>
       <Carousel.Item>
-        <img text="First slide"
-       
-        src="/src/assets/foto1.png"
-     />
+        <img src={aylin1} className="d-block w-100" alt="slide 1" />
+
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          
+          <p className='historia-texto'>Esta historia está por comenzar a sonar…
+y tu presencia va a ser parte de cada nota </p>
         </Carousel.Caption>
+
       </Carousel.Item>
 
       <Carousel.Item>
-        <img text="Second slide"
-      
-        src="/src/assets/foto2.png" />
+      <img src={aylin2} className="d-block w-100" alt="slide 1" />
+
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p className='historia-texto'>Esta historia está por comenzar a sonar…
+y tu presencia va a ser parte de cada nota </p>
         </Carousel.Caption>
+
       </Carousel.Item>
+
     </Carousel>
   );
 }
 
-export default ControlledCarousel;
+export default Carrusel;
 
-// className="d-block w100"

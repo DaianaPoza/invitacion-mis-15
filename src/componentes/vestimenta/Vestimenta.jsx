@@ -8,8 +8,8 @@ function Vestimenta() {
     <section className="ropa">
       <div className="codigo">
         <h1 className="dress"> Dress code</h1>
-        <p className="hombreymujer"> Hombres: Elegante </p>
-        <p className="hombreymujer"> Mujeres: Elegante sport </p>
+        
+        <p className="hombreymujer"> Elegante sport </p>
       </div>
 
       <div className="contenedor-vestimenta">

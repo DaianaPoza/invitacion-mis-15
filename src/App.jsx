@@ -12,7 +12,7 @@ import Musica from "./componentes/Musica/Musica.jsx"
 import RSVP from "./componentes/confirmacion/Confirmacion.jsx";
 import Fecha from "./componentes/fecha/Fecha.jsx";
 import Music from "./componentes/music/Music.jsx";
-
+import Carrusel from "./componentes/carrusel/Carrusel.jsx";
 
 function App() {
 
@@ -32,8 +32,9 @@ function App() {
       />
 <Vestimenta/>
 <Chicos/>
- 
+< Carrusel />
   <RSVP />
+
   <Footer />
   </div>
     </>

@@ -10,39 +10,35 @@
   /* Botón con tu mismo estilo romántico beige-dorado */
   .musica__btn {
     display: inline-block;
-  padding: 0.8rem 1.8rem;
-  background-color:grey;
-  border: 2px solid whitesmoke;
+  background: linear-gradient(180deg, #f5f6fa, #cfd3e1);
+  border: 1px solid #9ea3b3;
   border-radius: 999px;
-  color:aliceblue;
-  font-size: 1.2rem;
+  padding: 0.9rem 2rem;
+  color: #1a1c23;
+  font-size: 1.1rem;
   text-decoration: none;
+  box-shadow: 0 0 12px rgba(200,220,255,0.4);
   transition: all 0.3s ease;
-  font-family: "Dancing Script", cursive;
+  margin-top: 1.5rem;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(184, 164, 122, 0.25);
-  margin-top: 1.2rem;
   }
   
   /* Efecto hover igual a tus otros botones */
   .musica__btn:hover {
-    background:black;
+    background: #9ea3b3;
+  color: #fff;
+  transform: scale(1.05);
+  border: 1px solid #9ea3b3;
+  }
   
-    transform: scale(1.03);
-    box-shadow: 0 0 12px rgba(184, 164, 122, 0.6);
-    border: none;
+  .musica__btn:visited,
+  .musica__btn:focus,
+  .musica__btn:active {
+    background: linear-gradient(180deg, #f5f6fa, #cfd3e1);
+    color: #1a1c23;
+    outline: none;
+    box-shadow: none;
     text-decoration: none;
   }
   
-  /* Estado cuando está sonando */
-  .musica__btn.is-playing {
-    background: #b8a47a;
-    color: #fff;
-    box-shadow: 0 0 12px rgba(184, 164, 122, 0.6);
-  }
-  
-  /* Eliminar borde azul al enfocar o hacer clic */
-  .musica__btn:focus {
-    outline: none;
-  }
   
