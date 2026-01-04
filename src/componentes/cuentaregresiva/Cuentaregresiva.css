@@ -1,5 +1,5 @@
 .cuenta {
-  background: linear-gradient(180deg, #fbf8f3, #fff 40%, #fbf8f3);
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +14,8 @@
   
   .countdown-title {
     margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #b8a47a; 
+    font-size: 3rem;
+    color:midnightblue;
     font-family: "Dancing Script", cursive; 
   }
   
@@ -35,21 +35,21 @@
     padding: 1rem;
     border-radius: 16px;
     background: linear-gradient(180deg, #fff, #fbf8f3);
-    border: 1px solid #eadfce;
+    border: 1px solid  lightgray ;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
   }
   
   .countdown-value {
     font-size: 2rem;
     font-weight: bold;
-    color: #2b2a28;
+    color: midnightblue;
   }
   
   .countdown-label {
     font-size: 0.9rem;
     opacity: 0.75;
     margin-top: 0.25rem;
+    color: midnightblue;
   }
   
  

@@ -32,8 +32,7 @@ function App() {
       />
 <Vestimenta/>
 <Chicos/>
-<Musica/>
-  <Regalo />
+ 
   <RSVP />
   <Footer />
   </div>

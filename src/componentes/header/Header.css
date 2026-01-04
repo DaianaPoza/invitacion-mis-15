@@ -5,54 +5,52 @@
   height: 90vh; /* ocupa casi toda la pantalla */
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
   position: relative;
   overflow: hidden;
+  align-items: flex-end;
+  padding-bottom: 3vh;
+
+
+
 }
 
-/* Capa beige translúcida sobre la foto para mejorar legibilidad */
-.invitacion-fondo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(240, 236, 231, 0.35); /* beige suave con transparencia */
-  
-}
+
 
 .invitacion-texto {
   position:relative; /* para quedar sobre el overlay */
   z-index: 1;
-  transform:translateY(-150px);
-  
+  transform: translateY(10vh);
 }
 
 .invitacion-texto h1 {
  /* font-size: 5rem; */
- font-size: clamp(3.5rem, 9vw, 5rem);  /* fluido */
+ font-size: clamp(5rem, 9vw, 5rem);  /* fluido */
   font-weight: 600;
   margin-bottom: 0.8rem;
-  color: #fbfaf9;
+  color:floralwhite;
  
   letter-spacing: 2px;
   text-shadow:
-    0 0 10px rgba(6, 7, 7, 0.6),
-    0 0 20px rgba(102, 201, 216, 0.4),
-    0 0 30px rgba(78, 213, 237, 0.3);
+  0 0 4px rgba(255,255,255,0.5),
+  0 0 10px rgba(180,190,255,0.25);
+
 }
+
 
 .invitacion-texto h2 {
  /* font-size: 4rem; */
- font-size: clamp(3rem, 6vw, 4rem);
-  color: #fbfaf9; 
+ font-size: clamp(4rem, 6vw, 4rem);
+ color:floralwhite;
 
   letter-spacing: 2px;
   text-shadow:
-    0 0 10px rgba(6, 7, 7, 0.6),
-    0 0 20px rgba(102, 201, 216, 0.4),
-    0 0 30px rgba(78, 213, 237, 0.3);
+  0 0 4px rgba(255,255,255,0.5),
+  0 0 10px rgba(180,190,255,0.25);
 
 }
+
+
 /* 💫 Versión móvil */
 @media (max-width: 768px) {
   .invitacion-fondo {
@@ -66,7 +64,7 @@
   height: 90vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+
   text-align: center;
   overflow: hidden;
 }
@@ -80,21 +78,12 @@
   z-index: 0;
 }
 
-/* Tu capa beige translúcida */
-.invitacion-fondo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(240, 236, 231, 0.35);
-  
-}
 
 /* Texto encima */
 .invitacion-texto {
   position: relative;
   z-index: 1;
-  transform: translateY(-150px);
-  
+  transform: translateY(0vh);
 }
 
 

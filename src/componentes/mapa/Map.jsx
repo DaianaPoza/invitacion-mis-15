@@ -13,9 +13,8 @@ export default function Map({ name, address, }) {
     <section className="map">
       <div className="container">
         <h1 className="map__title liner">Cómo llegar</h1>
-        <p className="map__address liner"> Cam. Parque Sesquicentenario 1630 8.5</p>
-        <p className="map__address liner"> Bahía Blanca,</p>
-        <p className="map__address liner">  Buenos Aires</p>
+        <p className="map__address liner"> Bacano Disco</p>
+        <p className="map__address liner"> Carhué, Buenos Aires</p>
 
         <div className="map__frame">
           <iframe

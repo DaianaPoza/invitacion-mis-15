@@ -5,19 +5,16 @@ function Fecha() {
     return (
         <section className="fecha">
         <div className="datos">
-          <p className="linea"> Te esperamos el Sábado</p>
-          <p className="linea"> 31 de Enero del 2026</p>
-          <p className="linea hora"> 19:00 hs</p>
-          <p className="linea ceremonia">💍</p>
-          <p className="linea ceremonia">Ceremonia y evento</p>
-          <p className="linea ceremonia">🥂</p>
-          <p className="linea venue"> Sociedad Rural </p>
-          <p className="linea venue"> Bahía Blanca</p>
+          <p className="linea"> Te espero el Martes 10 de Febrero del 2026 para celebrar juntos el comienzo de mis 15 años</p>
+          <p className="linea ceremonia silver-glow">✨</p>
+          <p className="linea hora">Horario 21:30 hs</p>
+          
+          <p className="linea venue"> Salon de Bacano </p>
+          <p className="linea venue"> Carhué</p>
         </div></section>
        
     )
 }
-
 
 
 export default Fecha;

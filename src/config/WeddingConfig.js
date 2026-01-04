@@ -1,12 +1,12 @@
 export const WEDDING = {
   couple: { bride: "Dai", groom: "Diego" },
-  title: "¡Nos casamos!",
-  dateISO: "2026-01-31T18:30:00-03:00", // horario local
+  title: "¡mis 15 años!",
+  dateISO: "2026-02-10T21:30:00-03:00", // horario local
   venue: {
-    name: "Sociedad Rural de Bahía Blanca",
-    address: "Cam. Parque Sesquicentenario 1630 8.5, Bahía Blanca, Buenos Aires",
-    lat: -38.7183,
-    lng: -62.2663,
+    name: "Bacano Disco",
+    address: "B6330 Carhué, Provincia de Buenos Aires",
+    lat: -37.17065,
+    lng: -62.74581,
   },
   bank: {
     alias: "Boda.dai.diego",

@@ -1,5 +1,5 @@
 import './Header.css';
-import fondo from "../../assets/nana.jpeg"; 
+import fondo from "../../assets/piano.jpeg"; 
 
 function Header() {
   return (
@@ -7,13 +7,13 @@ function Header() {
       {/* Imagen visible como fondo pero optimizada */}
       <img
         src={fondo}
-        alt="Fondo invitación Dai & Diego"
+        alt="Fondo invitación mis 15"
         className="invitacion-fondo-img"
       />
 
-      <div className="invitacion-texto">
-        <h1>Day & Diego</h1>
-        <h2>¡Nos casamos!</h2>
+      <div className="invitacion-texto silvester-text">
+        <h1> Aylin</h1>
+        <h2>Mis 15 años</h2>
       </div>
     </section>
   );

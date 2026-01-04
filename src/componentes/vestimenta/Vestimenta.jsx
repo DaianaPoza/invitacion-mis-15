@@ -1,14 +1,15 @@
 import "./Vestimenta.css";
-import traje from "../../assets/traje.jpeg";
-import vestido from "../../assets/vestido.jpeg";
+import traje from "../../assets/hombre.jpg";
+import vestido from "../../assets/mujer1.avif";
 import recomendaciones from "../../assets/recomendaciones.jpeg";
 
 function Vestimenta() {
   return (
     <section className="ropa">
       <div className="codigo">
-        <h1>Código de Vestimenta</h1>
-        <h2>Formal</h2>
+        <h1 className="dress"> Dress code</h1>
+        <p className="hombreymujer"> Hombres: Elegante </p>
+        <p className="hombreymujer"> Mujeres: Elegante sport </p>
       </div>
 
       <div className="contenedor-vestimenta">
@@ -18,8 +19,8 @@ function Vestimenta() {
           <img src={vestido} alt="vestido elegante" className="imagen-lateral" />
         </div>
 
-        {/* Imagen circular centrada debajo */}
-        <img src={recomendaciones} alt="recomendaciones" className="imagen-central" />
+        <p className="azul">  No asistir con vestimenta azul </p>
+        
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 .map {
   padding: 2rem 1rem;
   text-align: center;
-  background-color: white;
+  background:linear-gradient(180deg, #1b2038, #0b0f1f);
 }
 
 /* contenedor central con ancho máximo */
@@ -13,23 +13,36 @@
 /* títulos y texto */
 .map__title {
   margin: 0 0 0.5rem;
-  color: #b8a47a;
   font-size: 2rem;
+  white-space: nowrap;
+  font-size: 2rem;
+  color:#F8FAFF ;
+  text-shadow:
+    0 0 4px rgba(255,255,255,0.6),
+    0 0 10px rgba(200,220,255,0.35),
+    0 0 18px rgba(200,220,255,0.25);
 }
 
 .map__address {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  white-space: nowrap;
+  font-size: 2rem;
+  color:#F8FAFF ;
+  text-shadow:
+    0 0 4px rgba(255,255,255,0.6),
+    0 0 10px rgba(200,220,255,0.35),
+    0 0 18px rgba(200,220,255,0.25);
 }
 
 /* botón de enlace */
 .map__link {
   display: inline-block;
   padding: 0.8rem 1.8rem;
-  background-color: white;
-  border: 1px solid #b8a47a;
+  background-color:grey;
+  border: 2px solid whitesmoke;
   border-radius: 999px;
-  color: #2b2a28;
+  color:#b8a47a;
   font-size: 1.2rem;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -40,8 +53,8 @@
 }
 
 .map__link:hover {
-  background: #b8a47a;
-  color: #fff !important;
+  background:black;
+  
   transform: scale(1.03);
   box-shadow: 0 0 12px rgba(184, 164, 122, 0.6);
   border: none;
@@ -52,7 +65,7 @@
 .map__link:visited,
 .map__link:focus,
 .map__link:active {
-  color: #2b2a28;
+  color:aliceblue;
   outline: none;
   text-decoration: none;
   box-shadow: none;

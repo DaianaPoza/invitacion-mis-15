@@ -16,13 +16,10 @@ export default function Seccion() {
   });
 
   return (
-    <section className="fecha">
+    <section className="countdown-section">
       <div className="countdown">
         <Cuentaregresiva dateISO={WEDDING.dateISO} />
       </div>
-      <section>
-      
-      </section>
-    </section>
+   </section>
   );
 }

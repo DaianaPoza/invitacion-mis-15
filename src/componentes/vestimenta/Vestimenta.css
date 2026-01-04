@@ -1,8 +1,18 @@
 .ropa {
-  background: linear-gradient(180deg, #fbf8f3, #fff 40%, #fbf8f3);
+  background-color: white;
   text-align: center;
   padding: 3rem 1rem;
 }
+.dress {
+  color: midnightblue;
+  font-size: 3rem;
+}
+
+.hombreymujer {
+  font-size: 2rem;
+  color: midnightblue;
+}
+
 
 /* Contenedor general */
 .contenedor-vestimenta {
@@ -26,7 +36,7 @@
   height: 180px;
   object-fit: cover;
   border-radius: 12px;
-  border: 3px solid #eadfce;
+  border: 3px solid lightgray;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -57,11 +67,14 @@
   }
 
   .codigo h1, .codigo h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
-
+.azul {
+  color: rgb(123, 123, 131);
+  font-size: 2rem;
+}
 
 
 
