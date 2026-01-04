@@ -8,9 +8,6 @@ export default function Confirmacion() {
         Tu presencia es muy importante para mí.  
         
       </p>
-      <p> 
-        Por favor confirmá tu asistencia completando el siguiente formulario 
-      </p>
 
       <a
         className="rsvp-btn"

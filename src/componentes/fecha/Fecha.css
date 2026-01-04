@@ -1,20 +1,18 @@
 
   .fecha {
-    max-width: 700px;
+    width: auto;   /* crece con la pantalla, con límite elegante */
+    padding: 2.5rem 1.5rem;     /* para que no quede “apretada” */
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
     justify-items: center;
-    font-size: 2rem;
-    font-weight: bold; 
-    margin: 0.5rem auto; /* <-- centrado horizontal */
-  text-align: center;  /* <-- centra el texto dentro */
-  background:linear-gradient(180deg, #1b2038, #0b0f1f);
-  position: relative;
-  overflow: hidden;
+    text-align: center;
+  
+    background: linear-gradient(180deg, #1b2038, #0b0f1f);
+    position: relative;
+    overflow: hidden;
   }
   
 
-  
   .fecha::before {
     content: "";
     position: absolute;
@@ -38,8 +36,9 @@
   
 .datos .linea {
   white-space: nowrap;
-  font-size: 2rem;
-  color:#F8FAFF ;
+  overflow-wrap: break-word;
+  font-size: clamp(2rem, 2.2vw, 2rem);  /* escala en mobile y desktop */
+  color: #F8FAFF;
   text-shadow:
     0 0 4px rgba(255,255,255,0.6),
     0 0 10px rgba(200,220,255,0.35),

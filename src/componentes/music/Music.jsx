@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import "./Music.css";
-import cancion from "../../assets/marry/MarryYou.mp3"; // ← tu archivo MP3 (ajustá el nombre/ruta si cambia)
+import cancion from "../../assets/marry/Coldplay-InMyPlace.mp3"; // ← tu archivo MP3 (ajustá el nombre/ruta si cambia)
 
 export default function Music() {
   const audioRef = useRef(null);

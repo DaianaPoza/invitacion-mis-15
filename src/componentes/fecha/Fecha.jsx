@@ -9,12 +9,11 @@ function Fecha() {
           <p className="linea ceremonia silver-glow">✨</p>
           <p className="linea hora">Horario 21:30 hs</p>
           
-          <p className="linea venue"> Salon de Bacano </p>
+          <p className="linea venue"> Salon Bacano </p>
           <p className="linea venue"> Carhué</p>
         </div></section>
        
     )
 }
-
 
 export default Fecha;
