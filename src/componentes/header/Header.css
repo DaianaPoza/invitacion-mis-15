@@ -117,26 +117,28 @@
 }
 
 .scroll-indicador {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 1.2rem;   /* ← acá se mueve a la derecha */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #d6c7ff;
-  font-family: "Playfair Display", serif;
-  font-size: 0.85rem;
-  animation: bounce 1.6s infinite;
-  opacity: 0.85;
-  z-index: 20;
-  text-shadow: 0 0 6px rgba(255,255,255,0.4);
+ 
+    position: absolute;
+    bottom: 0.5rem;       /* antes 1.5rem – ahora queda más abajo */
+    right: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e6dbff;
+    font-family: "Playfair Display", serif;
+    font-size: 0.75rem;   /* un poquito más chico */
+    animation: bounce 1.6s infinite;
+    opacity: 0.85;
+    z-index: 30;
+    text-shadow: 0 0 6px rgba(255,255,255,0.35);
+  
+  
 }
 
 
 .scroll-indicador i {
-  font-size: 1.8rem;
-  margin-bottom: 0.3rem;
-
+  font-size: 0,5rem;
+  margin-bottom: 0rem;
 }
 
 @keyframes bounce {
