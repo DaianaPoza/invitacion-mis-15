@@ -12,9 +12,16 @@ function Header() {
       />
 
       <div className="invitacion-texto silvester-text">
-        <h1> Aylin</h1>
+        <h1> Aylín</h1>
         <h2>Mis 15 años</h2>
       </div>
+
+      <div className="scroll-indicador">
+  <i className="bi bi-chevron-double-down"></i>
+  <span>Deslizá para ver más</span>
+</div>
+
+
     </section>
   );
 }

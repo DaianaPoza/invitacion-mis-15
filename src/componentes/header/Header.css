@@ -10,6 +10,7 @@
   overflow: hidden;
   align-items: flex-end;
   padding-bottom: 3vh;
+  position: relative;
 
 
 
@@ -115,5 +116,35 @@
   }
 }
 
+.scroll-indicador {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.2rem;   /* ← acá se mueve a la derecha */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #d6c7ff;
+  font-family: "Playfair Display", serif;
+  font-size: 0.85rem;
+  animation: bounce 1.6s infinite;
+  opacity: 0.85;
+  z-index: 20;
+  text-shadow: 0 0 6px rgba(255,255,255,0.4);
+}
 
+
+.scroll-indicador i {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
 
