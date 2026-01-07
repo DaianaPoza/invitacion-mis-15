@@ -1,16 +1,14 @@
+.cumplir15 {
+    background-color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
 .historia-texto {
+   
     font-size: 2rem;
-    text-shadow:
-    0 0 6px rgba(255,255,255,0.5),
-    0 0 14px rgba(180,190,255,0.35);
-    font-weight: 900;
-
-    -webkit-text-stroke: 1px rgb(252, 250, 250);   /* borde negro real */
-  text-shadow:
-    0 0 6px rgba(255,255,255,0.5),
-    0 0 14px rgba(180,190,255,0.35);
-
-
-  
+    color: midnightblue;
+    text-shadow: 0 0 4px rgba(120, 160, 255, 0.35);
+    hyphens: none;
 }
 

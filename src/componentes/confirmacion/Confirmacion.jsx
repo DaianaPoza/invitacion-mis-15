@@ -5,7 +5,7 @@ export default function Confirmacion() {
     <section className="rsvp">
       <h2>Confirmación de asistencia</h2>
       <p>
-        Tu presencia es muy importante para mí.  
+      Tu presencia hará que este recuerdo sea aún más especial.
         
       </p>
 
