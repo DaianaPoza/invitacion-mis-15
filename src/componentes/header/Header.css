@@ -2,7 +2,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh; /* ocupa casi toda la pantalla */
+ /*height: 100vh;   ocupa casi toda la pantalla */
   display: flex;
   justify-content: center;
   text-align: center;
@@ -11,10 +11,17 @@
   align-items: flex-end;
   padding-bottom: 3vh;
   position: relative;
-
+ 
+  min-height: calc(var(--vh) * 100);
+  
 
 
 }
+
+
+
+
+
 
 
 
@@ -151,13 +158,3 @@
 }
 
 
-.fade-section {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.9s ease-out;
-}
-
-.fade-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}

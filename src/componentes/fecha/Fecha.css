@@ -43,6 +43,7 @@
     0 0 4px rgba(255,255,255,0.6),
     0 0 10px rgba(200,220,255,0.35),
     0 0 18px rgba(200,220,255,0.25);
+   
 }
 
 
@@ -56,6 +57,7 @@
     white-space: normal;            /* ✅ permitir salto */
     text-wrap: pretty;              /* saltos más lindos */
     overflow-wrap: anywhere;        /* por si alguna palabra queda larguísima */
+    
   }
 
 }
@@ -78,17 +80,9 @@
   text-shadow:
     0 0 4px rgba(255,255,255,0.6),
     0 0 10px rgba(180,190,255,0.4);
+   
 }
 
 
 
-.fade-section {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.9s ease-out;
-}
 
-.fade-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}

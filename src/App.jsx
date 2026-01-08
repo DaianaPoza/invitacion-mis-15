@@ -19,36 +19,8 @@ import Music from "./componentes/music/Music.jsx";
 import Carrusel from "./componentes/carrusel/Carrusel.jsx";
 
 function App() {
-
-
-  useEffect(() => {
-    const sections = document.querySelectorAll(".fade-section");
-
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target); // solo anima una vez
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-
-    sections.forEach(section => observer.observe(section));
-  }, []);
-
-
-
-
-
-
-
-
-
-
   
+
   return (
     <>
     <div className='body'>
