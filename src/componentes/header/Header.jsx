@@ -3,7 +3,7 @@ import fondo from "../../assets/piano.jpeg";
 
 function Header() {
   return (
-    <section className="invitacion-fondo">
+    <section className="invitacion-fondo fade-section">
       {/* Imagen visible como fondo pero optimizada */}
       <img
         src={fondo}

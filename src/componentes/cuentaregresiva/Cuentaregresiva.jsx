@@ -13,7 +13,7 @@ export default function CuentaRegresiva({ dateISO }) {
   );
 
   return (
-   <section className="cuenta"> 
+   <section className="cuenta fade-section"> 
     <div className="countdown">
       <h3 className="countdown-title">Cuenta regresiva</h3>
       <div className="countdown-row">

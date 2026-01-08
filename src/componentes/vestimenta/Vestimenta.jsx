@@ -5,7 +5,7 @@ import recomendaciones from "../../assets/recomendaciones.jpeg";
 
 function Vestimenta() {
   return (
-    <section className="ropa">
+    <section className="ropa fade-section">
       <div className="codigo">
         <h1 className="dress"> Dress code</h1>
         

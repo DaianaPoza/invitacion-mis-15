@@ -19,7 +19,7 @@ export default function Music() {
   };
 
   return (
-    <section className="musica">
+    <section className="musica fade-section">
       <button
         className={`musica__btn ${playing ? "is-playing" : ""}`}
         onClick={togglePlay}

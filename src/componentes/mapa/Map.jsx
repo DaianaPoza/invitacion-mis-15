@@ -10,7 +10,7 @@ export default function Map({ name, address, }) {
   const link  = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(q)}`;
 
   return (
-    <section className="map">
+    <section className="map fade-section">
       <div className="container">
         <h1 className="map__title liner">Cómo llegar</h1>
         <p className="map__address liner"> Bacano Disco</p>

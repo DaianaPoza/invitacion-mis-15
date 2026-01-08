@@ -1,4 +1,8 @@
 //import React from 'react';
+
+import { useEffect } from "react";
+
+
 import './App.css'
 import Header from './componentes/header/Header'
 import Seccion from './componentes/seccion/Seccion'
@@ -16,6 +20,34 @@ import Carrusel from "./componentes/carrusel/Carrusel.jsx";
 
 function App() {
 
+
+  useEffect(() => {
+    const sections = document.querySelectorAll(".fade-section");
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); // solo anima una vez
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+  }, []);
+
+
+
+
+
+
+
+
+
+
   
   return (
     <>
@@ -31,8 +63,7 @@ function App() {
         address={WEDDING.venue.address}
       />
 <Vestimenta/>
-<Chicos/>
-< Carrusel />
+
   <RSVP />
 
   <Footer />

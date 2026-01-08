@@ -2,7 +2,7 @@ import "./Confirmacion.css";
 
 export default function Confirmacion() {
   return (
-    <section className="rsvp">
+    <section className="rsvp fade-section">
       <h2>Confirmación de asistencia</h2>
       <p>
       Tu presencia hará que este recuerdo sea aún más especial.

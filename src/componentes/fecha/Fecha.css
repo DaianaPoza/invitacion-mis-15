@@ -79,3 +79,16 @@
     0 0 4px rgba(255,255,255,0.6),
     0 0 10px rgba(180,190,255,0.4);
 }
+
+
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease-out;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

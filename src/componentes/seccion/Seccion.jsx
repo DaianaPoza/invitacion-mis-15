@@ -16,7 +16,7 @@ export default function Seccion() {
   });
 
   return (
-    <section className="countdown-section">
+    <section className="countdown-section fade-section">
       <div className="countdown">
         <Cuentaregresiva dateISO={WEDDING.dateISO} />
       </div>
